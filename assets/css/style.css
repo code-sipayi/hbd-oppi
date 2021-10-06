@@ -72,6 +72,7 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.5em;
+    padding:1%;
   }
  
   #speakerImage{
