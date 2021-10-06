@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy Birthday Oppi</title>
+    <meta charset="utf-8" />
+    <meta name="language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="assets/css/fontawesome/css/all.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/style.css"               type="text/css" rel="stylesheet" />
+    <link href="assets/css/google-fonts.css"        type="text/css" rel="stylesheet" />
+    <link href="assets/css/bulma.min.css"           type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="assets/js/jquery.js">   </script>
+    <script type="text/javascript" src="assets/js/birthday.js"> </script>
+  </head>
+
+  <body>
+    <div id="outer">
+      <div style="padding-top: 10px;" class="section">
+        <div class="columns">
+          <div class="play-music">
+            <img id="speakerImage" class="speakerImage fa-play-circle" onclick="toggleMusic()" src="assets/audio/sound-on.png"></div>
+            <div class="audio-div">
+                <audio autoplay hidden loop="" id="ambiance" controls="controls">
+                    <source src="assets/audio/hbd.mp3"" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+      </div>
+      <div class="columns"> 
+        <div id="code" class="column is-6 is-offset-2">
+          <span > ಓ ನನ್ನ ಮುದ್ದು ಒಪ್ಪಿ ,</span><br />
+          <span ></span><br />
+          <span ></span><br />
+
+          <span>ಹುಟ್ಟುಹಬ್ಬದ ಹಾರ್ದಿಕ ಶುಭಾಶಯಗಳು .</span><br />
+          <span >ನಿನ್ನ ಎಲ್ಲ ಕನಸುಗಳು ನನಸಾಗಲಿ .</span> 
+          <span >ನಿನ್ನ ಪೂರ್ತಿ ಜೀವನ </span><br />
+          <span >ಸುಖ ಸಂತೋಷದಿಂದ ಕೂಡಿರಲಿ . </span><br /><br />
+          <span >ಸದಾ ಕಾಲ ನಾನು ನಿನ್ನ ಜೊತೆ ಇರುವೆ . ನೀನೇ  ನನ್ನ  ಗೆಳತಿ ,</span><br />
+          <span >ಒಡತಿ  ಹಾಗೂ  ಜೀವನ ಸಂಗಾತಿ .</span><br /> <br />
+          <span >ನನ್ನ ಈ ಪುಟ್ಟ ಹೃದಯದಲ್ಲಿ ನೀನೇ ಆವರಿಸಿರುವೆ .</span><br />
+          <span >  ಐ ಲವ್ ಯೂ ಸೋ ಮಚ್ :) </span><br />
+          <span ></span><br />
+
+        </div>
+        <div id="loveHeart" class="is-4 column">
+          <canvas id="garden" style="display:none"></canvas>
+          
+        </div>
+      </div>
+        <br />
+        <hr />
+      <div > 
+        <div id="copyright">
+            <p>Made with  &nbsp; <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; by &nbsp;<a href="#code" target="_blank">Your Oppa</a></p>
+        </div>
+      </div>
+	</div>
+    <script type="text/javascript">
+
+      if (!document.createElement("canvas").getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML = "Sorry, browser doesn't support this!";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none");
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+      } else {
+        adjustCodePosition();
+        $("#code").typewriter();
+      }
+    </script>
+  </body>
+</html>

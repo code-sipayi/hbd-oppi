@@ -1,0 +1,88 @@
+body{
+    margin:0;
+    padding:0;
+    background:#fff;
+    font-size:12px;
+    overflow:auto
+}
+
+#loveHeart{
+    float:left;
+    width:670px;
+    height:625px
+}
+#garden{
+    width:100%;
+    height:100%
+}
+
+#code{
+    float:left;
+    width:445px;
+    height:auto;
+    color:#333;
+    font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";
+    font-size:16px;
+    font-weight:bolder;
+}
+
+#code .placeholder{
+    margin-left:15px
+}
+#code .space{
+    margin-left:7px
+}
+
+#copyright{
+    text-align:center;
+    color:#666
+}
+
+#errorMsg{
+    width:100%;
+    text-align:center;
+    font-size:24px;
+    position:absolute;
+    top:100px;
+    left:0
+}
+
+#copyright a{
+    color:#666
+}
+
+     
+#loveHeart {
+    background: transparent;
+    background: url("../images/n001.gif") no-repeat center;
+  }
+  #copyright {
+    font-family: "Montserrat", sans-serif;
+  }
+  #copyright a {
+    text-decoration: none;
+  }
+  #copyright a:hover {
+    text-decoration: none;
+    color: royalblue;
+  }
+ 
+  span{
+    background: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+  }
+ 
+  #speakerImage{
+      bottom: 20px;
+      left: 20px;
+      position:fixed;
+      z-index:999;
+      font-size: 3em;
+      max-width: 25px;
+  }
+
+  #outer{
+    overflow: hidden;
+  }
