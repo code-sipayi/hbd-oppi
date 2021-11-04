@@ -39,7 +39,8 @@
       </div>
       <div class="columns"> 
         <div id="code" class="column is-6 is-offset-2">
-          <span > ಓ ನನ್ನ ಮುದ್ದು ಒಪ್ಪಿ ,</span><br />
+
+          <span > ಓ ನನ್ನ ಮುದ್ದು <span onclick="toggleVisitCount()">ಒಪ್ಪಿ </span>,</span><br />
           <span ></span><br />
           <span ></span><br />
 
@@ -62,11 +63,18 @@
         <br />
         <hr />
       <div > 
+        <div id="counterDiv" style="display: none;">
+          <div class="counter">
+            <div class="head">Total Website Visit</div>
+            <div class="count">00</div>
+        </div>
+        </div>
         <div id="copyright">
             <p>Made with  &nbsp; <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; by &nbsp;<a href="#" target="_blank">Your Oppa</a></p>
         </div>
       </div>
 	</div>
+  <script type="text/javascript" src="assets/js/utils.js"> </script>
     <script type="text/javascript">
 
       if (!document.createElement("canvas").getContext) {
